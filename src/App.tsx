@@ -35,12 +35,13 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import WelcomePage from './pages/welcome/Welcome';
 
 const App: React.FunctionComponent = () => (
   <IonApp>
     <IonReactRouter>
       <IonPage id="main">
-        <IonTabs>
+        {/* <IonTabs>
           <IonRouterOutlet>
             <Route path="/:tab(tab1)" component={Tab1} exact={true} />
             <Route path="/:tab(tab2)" component={Tab2} exact={true} />
@@ -62,7 +63,8 @@ const App: React.FunctionComponent = () => (
               <IonLabel>Tab Three</IonLabel>
             </IonTabButton>
           </IonTabBar>
-        </IonTabs>
+        </IonTabs> */}
+        <WelcomePage/>
       </IonPage>
     </IonReactRouter>
   </IonApp>
